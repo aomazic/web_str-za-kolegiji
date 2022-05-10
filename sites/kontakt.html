@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+        </style> 
+            <script>
+                // Initialize and add the map
+                function initMap() {
+             
+                  const piza = { lat:  45.31203161390163, lng:18.425673445738052 };
+              
+                  const map = new google.maps.Map(document.getElementById("map2"), {
+                    zoom: 19,
+                    center: piza,
+                  });
+              
+                  const marker = new google.maps.Marker({
+                    position: piza,
+                    map: map,
+                  });
+                }
+              </script>
+</head>
+<body>
+    <div class="header">
+        <div class="row top">
+        <header class="col-sm-7">
+            <h1> Pizzeria Cikaga </h1>
+            </header>
+            <nav  class="col-sm-5">
+            <ul class="navigacija" >
+            <li class="col-sm-3"><a href="../index.html">Pocetna</a></li>
+            <li class="col-sm-3"><a href="../sites/meni.html">Meni</a></li>
+            <li class="col-sm-3"><a href="../sites/kontakt.htm">Kontakt</a></li>
+            <li class="col-sm-3"><a href="../sites/rezervacija.html">Rezervacija</a></li>
+            </ul>
+    </nav>
+    </div>
+    
+    <h2 id="naslov" class="text-center">Kontaktirajte nas</h2>
+    
+    </div>
+
+<div class="container">
+    <div class=" kont">
+    <div id="map2" class="kont1" ></div>
+        <div class="kont2">
+            <p>Adressa: UL ULICA ULICA 1 <br> Telefon: 109-526-852 <br> E-mail: ajskdn@gmail.com
+               </p>
+                 <p>  Radno vrijeme:
+                <br> pon - sub : 08:00 - 23 : 00
+                <br> ned : 08:00 - 22 : 00</p>
+
+        <a href=""><img src="../images/logo-facebookpng-32257.png" alt=""></a>
+        <a href=""><img src="../images/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" alt=""></a>
+        <a href=""><img src="../images/logo-ig-png-32461.png" alt=""></a>
+            </div>
+</div>
+
+<form>
+    <div class="item">
+      <p>Ime i prezime</p>
+      <div class="name-item">
+        <input type="text" name="name" placeholder="Ime" required/>
+        <input type="text" name="name" placeholder="Prezime"required />
+      </div>
+    </div>
+    <div class="item">
+      <p>Email</p>
+      <input type="email" name="email" />
+    </div>
+     <div class="item">
+      <p>Bilješke</p>
+      <textarea rows="3"></textarea>
+    </div>
+     <div class="posalji-btn">
+      <button type="submit" href="/">Pošalji</button>
+    </div>
+  </form>
+</div>
+
+
+
+    <footer class="row"> 
+        <div class="container">
+        <div class="col-sm-4"><h1>PIZZERIA</h1></div>
+        <div class="col-sm-4">
+        <p>Adressa: UL ULICA ULICA 1 <br> Telefon: 109-526-852 <br> E-mail: ajskdn@gmail.com</p>
+        
+        
+        </div>
+        <div class="col-sm-4"> 
+        <a href=""><img src="../images/logo-facebookpng-32257.png" alt=""></a>
+        <a href=""><img src="../images/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" alt=""></a>
+        <a href=""><img src="../images/logo-ig-png-32461.png" alt=""></a>
+        
+        
+        </div>
+        </div>
+        
+        </footer>
+
+
+
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdos3xBlbkQnWb7LUPMkhiw3ebg1VBPww&callback=initMap&libraries=&v=weekly"
+        async
+      >
+  </script>
+</body>
+</html>
